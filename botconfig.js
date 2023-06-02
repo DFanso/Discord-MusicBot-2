@@ -1,12 +1,12 @@
 module.exports = {
   Admins: ["UserID", "UserID"], // Admins of the bot, I don't know what this do. -Darren.
   ExpressServer: false, // If you wanted to make the website run or not
-  DefaultPrefix: process.env.Prefix || ">", // Default prefix, Server Admins can change the prefix
+  DefaultPrefix: process.env.Prefix, // Default prefix, Server Admins can change the prefix
   Port: 3000, //Which port website gonna be hosted
   SupportServer: "https://discord.gg/gSaKAct", // Support Server Link
-  Token: process.env.Token || "MTA2ODE3MjU0NTgyOTkwODUxMQ.GjbaOJ.okANy6BYrGRClrIK3pCSW-eLzNAZceiIHwrrbY", // Discord Bot Token
-  ClientID: process.env.Discord_ClientID || "1068172545829908511", // Discord Client ID
-  ClientSecret: process.env.Discord_ClientSecret || "dkEstAh3Fbv6HLGAj4aw2OJg4_Gbgwx0", // Discord Client Secret
+  Token: process.env.Token , // Discord Bot Token
+  ClientID: process.env.Discord_ClientID , // Discord Client ID
+  ClientSecret: process.env.Discord_ClientSecret , // Discord Client Secret
   Scopes: ["identify", "guilds", "applications.commands"], // Discord OAuth2 Scopes
   ServerDeafen: true, // If you want bot to stay deafened
   DefaultVolume: 100, // Sets the default volume of the bot, You can change this number anywhere from 1 to 9007199254740991 (JS Integer limit. If you do set it to that, you're a monster.)
@@ -17,7 +17,7 @@ module.exports = {
     "https://raw.githubusercontent.com/SudhanPlayz/Discord-MusicBot/master/assets/logo.gif", // URL of all embed author icons | Dont edit unless you dont need that Music CD Spining
   EmbedColor: "RANDOM", // Color of most embeds | Custom Hex value are supported. I.e: "#36393F"
   Permissions: 2205281600, // Bot Inviting Permissions
-  Website: process.env.Website || "https://example.com", // Website where it is hosted at includes http or https || Use "0.0.0.0" if you using Heroku || Do not include /api/callback. Just the website url. I.e. "https://foo.bar"
+  Website: process.env.Website , // Website where it is hosted at includes http or https || Use "0.0.0.0" if you using Heroku || Do not include /api/callback. Just the website url. I.e. "https://foo.bar"
   // If you get invalid oauth, make sure on the discord developer page you set the oauth url to something like: https://example.com/api/callback.
 
   Presence: {
@@ -39,7 +39,7 @@ module.exports = {
   },
   // Spotify Integration, allows you to enter a spotify link.
   Spotify: {
-    ClientID: process.env.Spotify_ClientID || "e1b0e31ae33c4e47a6a192d8a7edc5ae", // Spotify Client ID
-    ClientSecret: process.env.Spotify_ClientSecret || "410d43f6ea514ee58404f50d2b187fb0", // Spotify Client Secret
+    ClientID: process.env.Spotify_ClientID , // Spotify Client ID
+    ClientSecret: process.env.Spotify_ClientSecret , // Spotify Client Secret
   },
 };
